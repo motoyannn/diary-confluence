@@ -1,0 +1,11 @@
+{
+  "automatic_layer": true,
+  "version": "2.0",
+  "app_name": "diary-confluence",
+  "stages": {
+    "dev": {
+      "environment_variables": {},
+      "api_gateway_stage": "api"
+    }
+  }
+}

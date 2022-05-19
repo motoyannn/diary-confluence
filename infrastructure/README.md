@@ -1,5 +1,7 @@
 # Infrastructure
 
+* not work on m1 mac
+
 ## Deploy
 
 ```shell

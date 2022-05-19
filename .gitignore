@@ -226,4 +226,11 @@ $RECYCLE.BIN/
 # AWS
 */.aws/config
 
+# Node
+package-lock.json
+package.json
+.node-version
+.nvmrc
+node_modules/
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,python

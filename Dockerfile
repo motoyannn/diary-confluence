@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster
+FROM nikolaik/python-nodejs:python3.9-nodejs14
 
 WORKDIR /app
 

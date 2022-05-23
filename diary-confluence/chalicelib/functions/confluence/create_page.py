@@ -5,7 +5,7 @@ from chalicelib.common.settings import Settings
 from dateutil import tz
 
 
-def create_page(confluence: Confluence):
+def create_page(confluence: Confluence, settings: Settings):
     """
     Create a new page in Confluence.
 
@@ -24,10 +24,10 @@ def create_page(confluence: Confluence):
     ### Private
     """
     confluence.create_page(
-        space=Settings.CONFLUENCE["SPACE"],
+        space=settings.CONFLUENCE["SPACE"],
         title=title,
         body=body,
-        parent_id=Settings.CONFLUENCE["PARENT_PAGE"],
+        parent_id=settings.CONFLUENCE["PARENT_PAGE"],
         type="page",
         representation="storage",
         editor="v2",

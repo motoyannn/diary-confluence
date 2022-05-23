@@ -3,11 +3,19 @@
   "version": "2.0",
   "app_name": "diary-confluence",
   "stages": {
+    "local": {
+      "environment_variables": {
+        "ENV": "local"
+      },
+      "api_gateway_stage": "api"
+    },
     "dev": {
       "environment_variables": {
         "ENV": "development"
       },
-      "api_gateway_stage": "api"
+      "api_gateway_stage": "api",
+      "autogen_policy": true,
+      "iam_policy_file": "custom-policy.dev.json"
     }
   }
 }

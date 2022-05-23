@@ -1,13 +1,18 @@
 # Infrastructure
 
-* not work on m1 mac
+- not work on m1 mac
 
 ## Deploy
 
 ```shell
 docker-compose exec app bash
 
-# in container
+# in the container
 cd infrastructure
-cdk deploy MainStack
+
+# list stack
+cdk ls
+
+# deploy
+cdk deploy Automation--MainStack
 ```

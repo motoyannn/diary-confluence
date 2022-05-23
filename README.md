@@ -29,3 +29,13 @@ docker-compose exec app bash
 cd diary-confluence
 chalice delete
 ```
+
+## Run locally
+
+```shell
+docker-compose exec app bash
+
+# inside of the python container
+cd diary-confluence
+chalice local --stage=local --host=0.0.0.0
+```
